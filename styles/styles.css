@@ -1,11 +1,12 @@
 nav {
     grid-area: nav;
-    background-color: lightgrey;
+    background-color: navy;
     width: 100%;
 
     margin-right: 30px;
     display: flex;
     justify-content: flex-end;
+    min-height: 13vh;
 }
 
 .name-type {
@@ -13,46 +14,42 @@ nav {
     grid-area: name-type
 }
 
-nav a {
-    display: block;
+nav li {
+    list-style-type: none;
+
+    width: fit-content;
     margin-right: 30px;
-    margin-top: 3vh;
+    margin-top: 10px;
+
+
+}
+
+nav a {
+    padding: 10px;
+    text-align: center;
+    display: block;
+
+
     height: 20px;
     border-radius: 30px;
-    width: 50px;
-    background-color: red;
+    width: fit-content;
+
     text-align: center;
     text-decoration: none;
     color: white;
 }
 
-.desktop-links {
-    margin-top: 4vh;
-}
 
-.desktop-links li {
-    display: inline-block;
-}
-
-#navbar {
-    display: none;
-}
-
-#hamburger {
-    display: none;
-}
 
 .clicked {
-    background-color: darkred;
+    background-color: deepskyblue;
 }
 
 .cons {
     text-align: center;
-    margin-right: 30px;
-    margin-left: 30px;
     grid-area: cons;
     background-color: blue;
-
+    margin: 30px;
 }
 
 .cons ul {
@@ -63,11 +60,10 @@ nav a {
 
 .pros {
     text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin: 30px;
     grid-area: pros;
     background-color: purple;
+
 
 }
 
@@ -77,25 +73,49 @@ nav a {
 }
 
 .references {
+    margin: 0 auto;
     text-align: center;
     grid-area: reference;
 
     background-color: grey;
 }
 
+.question {
+
+
+    width: 100%;
+    grid-area: 2/3;
+}
+
+.card-1 {
+
+    margin-top: 10vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card-2 {}
+
+
+.references p {
+    margin: 0 auto;
+}
+
 footer {
     grid-area: footer;
-    background-color: green;
+    background-color: navy;
     height: 20vh;
 }
 
 footer p {
     text-align: center;
     margin: 20px;
+    color: white
 }
 
 body {
-    gap: 30px;
+    gap: 0px;
     display: grid;
     grid-template-areas:
 
@@ -109,25 +129,10 @@ body {
 
 }
 
+
+
 @media only screen and (max-width:768px) {
-    .mobile-links {
-        margin-top: 5vh;
-    }
 
-    .desktop-links li {
-        display: none;
-    }
-
-    #navbar {
-        margin-top: 2.5vh;
-        margin-right: 20px;
-        display: inline-block;
-    }
-
-    .mobile-links li {
-
-        display: inline-block;
-    }
 
 
 
@@ -150,18 +155,7 @@ body {
 }
 
 @media only screen and (max-width:300px) {
-    .desktop-links li {
-        display: none;
-    }
 
-    #navbar {
-        margin-top: 4vh;
-        display: inline-block;
-    }
-
-    nav {
-        height: 10vh;
-    }
 
     footer {
         height: 10vh;
@@ -171,10 +165,10 @@ body {
         margin: 0 auto;
         grid-template-areas:
 
-            "nav nav nav nav "
+            "nav nav nav nav"
             "name-type name-type name-type name-type"
-            "pros pros pros pros "
-            "cons cons cons cons "
+            "pros pros pros pros"
+            "cons cons cons cons"
             "reference reference reference reference"
             "footer footer footer footer ";
     }
