@@ -8,7 +8,10 @@ nav {
     justify-content: flex-end;
 }
 
-
+.name-type {
+    text-align: center;
+    grid-area: name-type
+}
 
 nav a {
     display: block;
@@ -97,6 +100,7 @@ body {
     grid-template-areas:
 
         "nav nav nav nav nav nav"
+        "name-type name-type name-type name-type name-type name-type"
         "pros pros pros cons cons cons"
         "pros pros pros cons cons cons"
         "reference reference reference reference reference reference"
@@ -136,6 +140,7 @@ body {
         grid-template-areas:
 
             "nav nav nav nav "
+            "name-type name-type name-type name-type"
             "pros pros pros pros "
             "cons cons cons cons "
             "reference reference reference reference"
@@ -167,6 +172,7 @@ body {
         grid-template-areas:
 
             "nav nav nav nav "
+            "name-type name-type name-type name-type"
             "pros pros pros pros "
             "cons cons cons cons "
             "reference reference reference reference"
