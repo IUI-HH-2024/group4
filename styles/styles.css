@@ -1,183 +1,104 @@
+@ -0, 0+1, 104 @@ img {
+    max-width: 100%;
+}
+
+
+header {
+    grid-area: header;
+    background-color: yellow;
+}
+
 nav {
     grid-area: nav;
-    background-color: navy;
-    width: 100%;
-
-    margin-right: 30px;
-    display: flex;
-    justify-content: flex-end;
-    min-height: 13vh;
+    background-color: gray;
 }
 
-.name-type {
-    text-align: center;
-    grid-area: name-type
+main {
+    grid-area: main;
+    background-color: orange;
 }
 
-nav li {
-    list-style-type: none;
-
-    width: fit-content;
-    margin-right: 30px;
-    margin-top: 10px;
-
-
-}
-
-nav a {
-    padding: 10px;
-    text-align: center;
-    display: block;
-
-
-    height: 20px;
-    border-radius: 30px;
-    width: fit-content;
-
-    text-align: center;
-    text-decoration: none;
-    color: white;
-}
-
-
-
-.clicked {
-    background-color: deepskyblue;
-}
-
-.cons {
-    text-align: center;
-    grid-area: cons;
-    background-color: blue;
-    margin: 30px;
-}
-
-.cons ul {
-    text-align: left;
-    margin: 20px;
-
-}
-
-.pros {
-    text-align: center;
-    margin: 30px;
-    grid-area: pros;
-    background-color: purple;
-
-
-}
-
-.pros ul {
-    text-align: left;
-    margin: 20px;
-}
-
-.references {
-    margin: 0 auto;
-    text-align: center;
-    grid-area: reference;
-
-    background-color: grey;
-}
-
-.question {
-
-
-    width: 100%;
-    grid-area: 2/3;
-}
-
-.card-1 {
-
-    margin-top: 10vh;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.card-2 {}
-
-
-.references p {
-    margin: 0 auto;
+aside {
+    grid-area: aside;
+    background-color: bisque;
 }
 
 footer {
     grid-area: footer;
-    background-color: navy;
-    height: 20vh;
+    background-color: green;
 }
 
-footer p {
-    text-align: center;
-    margin: 20px;
-    color: white
-}
-
-body {
-    gap: 0px;
+.grid-container {
     display: grid;
     grid-template-areas:
+        'header header header header header aside'
+        'nav nav main main main aside'
+        'nav nav main main main aside'
+        'nav nav main main main aside'
+        'footer footer footer footer footer footer';
+    grid-gap: .5em;
+    padding: .5em;
 
-        "nav nav nav nav nav nav"
-        "name-type name-type name-type name-type name-type name-type"
-        "pros pros pros cons cons cons"
-        "pros pros pros cons cons cons"
-        "reference reference reference reference reference reference"
-        "footer footer footer footer footer footer";
+    max-width: 62em;
+    margin: auto;
+}
 
 
+ul li {
+    list-style-type: none;
 }
 
 
 
-@media only screen and (max-width:768px) {
+/* Below are two arbitrary break points. Please adjust to fit your content's needs. You can have more than two breakpoints. You want your site to be usable at ALL viewport widths. */
 
 
 
-
-    footer {
-        height: 20vh;
+/*FIRST BREAK POINT === tablet  Note: This is an arbitrary break point! Change it to fit your needs. */
+@media only screen and (max-width : 900px) {
+    body {
+        background: blue;
     }
 
-    body {
-        margin: 0 auto;
+    .grid-container {
+        display: grid;
         grid-template-areas:
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'main main main main aside aside'
+            'footer footer footer footer footer footer';
+        grid-gap: .5em;
+        padding: .5em;
+    }
 
-            "nav nav nav nav "
-            "name-type name-type name-type name-type"
-            "pros pros pros pros "
-            "cons cons cons cons "
-            "reference reference reference reference"
-            "footer footer footer footer ";
+    ul li {
+        display: inline-block;
     }
 
 }
 
-@media only screen and (max-width:300px) {
-
-
-    footer {
-        height: 10vh;
-    }
+/*SECOND BREAK POINT === mobile  Note: This is an arbitrary break point! Change it to fit your needs. */
+@media only screen and (max-width : 600px) {
 
     body {
-        margin: 0 auto;
+        background: fuchsia;
+    }
+
+    .grid-container {
+        display: grid;
         grid-template-areas:
-
-            "nav nav nav nav"
-            "name-type name-type name-type name-type"
-            "pros pros pros pros"
-            "cons cons cons cons"
-            "reference reference reference reference"
-            "footer footer footer footer ";
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'main main main main main main'
+            'aside aside aside aside aside aside'
+            'footer footer footer footer footer footer';
+        grid-gap: .5em;
+        padding: .5em;
     }
 
-    .references h1 {
-        font-size: 20px;
+    ul li {
+        display: inline-block;
     }
 
-    .references ul {
-        flex-wrap: wrap;
-    }
+
 }
