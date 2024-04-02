@@ -3,38 +3,65 @@
  }
 
 
- header {
-     grid-area: header;
-     background-color: yellow;
- }
 
  nav {
      grid-area: nav;
-     background-color: gray;
+     background-color: navy;
+
+
  }
 
- main {
-     grid-area: main;
+ .links {
+     text-align: right;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: white;
+     padding: 5px;
+     border-radius: 20px;
+     margin-right: 10px;
+ }
+
+ .name-type {
+     grid-area: name-type
+ }
+
+ .pros {
+     text-align: center;
+     grid-area: pros;
      background-color: orange;
  }
 
- aside {
-     grid-area: aside;
+ .references {
+     grid-area: references;
+     text-align: center;
+     background-color: lightgray;
+ }
+
+ .cons {
+     text-align: center;
+     grid-area: cons;
      background-color: bisque;
  }
 
  footer {
+     text-align: center;
      grid-area: footer;
-     background-color: green;
+     background-color: navy;
+     color: white;
  }
 
  .grid-container {
      display: grid;
      grid-template-areas:
          'nav nav nav nav nav nav'
-         'main main main aside aside aside'
-         'main main main aside aside aside'
-         'main main main aside aside aside'
+         'name-type name-type name-type name-type name-type name-type'
+         'pros pros pros cons cons cons'
+         'pros pros pros cons cons cons'
+         'pros pros pros cons cons cons'
+         'references references references references references references'
+         'references references references references references references'
          'footer footer footer footer footer footer';
      grid-gap: .5em;
      padding: .5em;
@@ -64,9 +91,10 @@
          display: grid;
          grid-template-areas:
              'nav nav nav nav nav nav'
-             'main main main main main main'
-             'aside aside aside aside aside aside'
-
+             'name-type name-type name-type name-type name-type name-type'
+             'pros pros pros pros pros pros'
+             'cons cons cons cons cons cons'
+             ' references references references references references references'
              'footer footer footer footer footer footer';
          grid-gap: .5em;
          padding: .5em;
@@ -89,9 +117,10 @@
          display: grid;
          grid-template-areas:
              'nav nav nav nav nav nav'
-             'header header header header header header'
-             'main main main main main main'
-             'aside aside aside aside aside aside'
+             'name-type name-type name-type name-type name-type name-type'
+             'pros pros pros pros pros pros'
+             'cons cons cons cons cons cons'
+             ' references references references references references references'
              'footer footer footer footer footer footer';
          grid-gap: .5em;
          padding: .5em;
