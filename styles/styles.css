@@ -1,104 +1,182 @@
-        img		{ 
-			max-width: 100%;
-		}
-		
-		
-		header {
-            grid-area: header;
-            background-color: yellow;
-        }
+nav {
+    grid-area: nav;
+    background-color: lightgrey;
+    width: 100%;
 
-        nav {
-            grid-area: nav;
-            background-color: gray;
-        }
-
-        main {
-            grid-area: main;
-            background-color: orange;
-        }
-
-        aside {
-            grid-area: aside;
-            background-color: bisque;
-        }
-
-        footer {
-            grid-area: footer;
-            background-color: green;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-areas:
-                'header header header header header aside'
-                'nav nav main main main aside'
-                'nav nav main main main aside'
-                'nav nav main main main aside'
-				'footer footer footer footer footer footer';
-            grid-gap: .5em;
-            padding: .5em;
-			
-			max-width: 62em;
-			margin: auto;
-        }
-
-
-        ul li {
-            list-style-type: none;
-        }
+    margin-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 
-/* Below are two arbitrary break points. Please adjust to fit your content's needs. You can have more than two breakpoints. You want your site to be usable at ALL viewport widths. */
+nav a {
+    margin-right: 30px;
+    margin-top: 3vh;
+    height: 20px;
+    border-radius: 30px;
+    width: 50px;
+    background-color: red;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.desktop-links {
+    margin-top: 4vh;
+}
+
+.desktop-links li {
+    display: inline-block;
+}
+
+#navbar {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+.clicked {
+    background-color: darkred;
+}
+
+.cons {
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    grid-area: cons;
+    background-color: blue;
+
+}
+
+.cons ul {
+    text-align: left;
+    margin: 20px;
+
+}
+
+.pros {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    grid-area: pros;
+    background-color: purple;
+
+}
+
+.pros ul {
+    text-align: left;
+    margin: 20px;
+}
+
+.references {
+    text-align: center;
+    grid-area: reference;
+
+    background-color: grey;
+}
+
+footer {
+    grid-area: footer;
+    background-color: green;
+    height: 20vh;
+}
+
+footer p {
+    text-align: center;
+    margin: 20px;
+}
+
+body {
+    gap: 30px;
+    display: grid;
+    grid-template-areas:
+
+        "nav nav nav nav nav nav"
+        "pros pros pros cons cons cons"
+        "pros pros pros cons cons cons"
+        "reference reference reference reference reference reference"
+        "footer footer footer footer footer footer";
+
+
+}
+
+@media only screen and (max-width:768px) {
+    .mobile-links {
+        margin-top: 5vh;
+    }
+
+    .desktop-links li {
+        display: none;
+    }
+
+    #navbar {
+        margin-top: 2.5vh;
+        margin-right: 20px;
+        display: inline-block;
+    }
+
+    .mobile-links li {
+
+        display: inline-block;
+    }
 
 
 
-        /*FIRST BREAK POINT === tablet  Note: This is an arbitrary break point! Change it to fit your needs. */
-        @media only screen and (max-width : 900px) {
-            body {
-                background: blue;
-            }
+    footer {
+        height: 20vh;
+    }
 
-            .grid-container {
-                display: grid;
-                grid-template-areas:
-                    'header header header header header header'
-					'nav nav nav nav nav nav'
-                    'main main main main aside aside'
-                    'footer footer footer footer footer footer';
-                grid-gap: .5em;
-                padding: .5em;
-            }
+    body {
+        margin: 0 auto;
+        grid-template-areas:
 
-            ul li {
-                display: inline-block;
-            }
+            "nav nav nav nav "
+            "pros pros pros pros "
+            "cons cons cons cons "
+            "reference reference reference reference"
+            "footer footer footer footer ";
+    }
 
-        }
+}
 
-        /*SECOND BREAK POINT === mobile  Note: This is an arbitrary break point! Change it to fit your needs. */
-        @media only screen and (max-width : 600px) {
+@media only screen and (max-width:300px) {
+    .desktop-links li {
+        display: none;
+    }
 
-            body {
-                background: fuchsia;
-            }
+    #navbar {
+        margin-top: 4vh;
+        display: inline-block;
+    }
 
-            .grid-container {
-                display: grid;
-                grid-template-areas:
-                    'nav nav nav nav nav nav'
-                    'header header header header header header'
-                    'main main main main main main'
-                    'aside aside aside aside aside aside'
-                    'footer footer footer footer footer footer';
-                grid-gap: .5em;
-                padding: .5em;
-            }
+    nav {
+        height: 10vh;
+    }
 
-            ul li {
-                display: inline-block;
-            }
-			
+    footer {
+        height: 10vh;
+    }
 
-        }
+    body {
+        margin: 0 auto;
+        grid-template-areas:
+
+            "nav nav nav nav "
+            "pros pros pros pros "
+            "cons cons cons cons "
+            "reference reference reference reference"
+            "footer footer footer footer ";
+    }
+
+    .references h1 {
+        font-size: 20px;
+    }
+
+    .references ul {
+        flex-wrap: wrap;
+    }
+}
