@@ -3,16 +3,23 @@
  }
 
 
-
  nav {
      grid-area: nav;
      background-color: navy;
-
-
+     min-height: 5vh;
+     width: 100%;
+     position: sticky;
  }
 
  .links {
-     text-align: right;
+     display: inline;
+     float: left;
+     margin-left: 20px;
+
+ }
+
+ .icon {
+     display: none;
  }
 
  nav a {
@@ -20,17 +27,40 @@
      color: white;
      padding: 5px;
      border-radius: 20px;
-     margin-right: 10px;
+
  }
 
- .name-type {
-     grid-area: name-type
+ .header {
+     grid-area: header;
+     text-align: center;
  }
 
  .pros {
      text-align: center;
      grid-area: pros;
      background-color: orange;
+
+ }
+
+ #links {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+
+ .pros li,
+ .cons li {
+     padding-bottom: 10px;
+ }
+
+ .pros,
+ .cons {
+     margin: 1em;
+ }
+
+
+ .pros ul {
+     padding: 20px;
  }
 
  .references {
@@ -39,10 +69,15 @@
      background-color: lightgray;
  }
 
+
  .cons {
      text-align: center;
      grid-area: cons;
      background-color: bisque;
+ }
+
+ .cons ul {
+     padding: 20px;
  }
 
  footer {
@@ -56,47 +91,125 @@
      display: grid;
      grid-template-areas:
          'nav nav nav nav nav nav'
-         'name-type name-type name-type name-type name-type name-type'
+         'header header header header header header '
          'pros pros pros cons cons cons'
          'pros pros pros cons cons cons'
          'pros pros pros cons cons cons'
          'references references references references references references'
          'references references references references references references'
          'footer footer footer footer footer footer';
-     grid-gap: .5em;
-     padding: .5em;
 
-     max-width: 62em;
+
+
+
      margin: auto;
  }
 
-
  ul li {
-     list-style-type: none;
+     list-style-type: "-";
  }
 
+ .card-1 {
+     background-color: navy;
+     color: white;
+     margin: 20px;
+     border: 2px solid navy;
+     border-radius: 30px;
 
+     grid-area: card1;
+ }
+
+ .digitization {
+
+     margin: 20px;
+     grid-area: image-1;
+
+ }
+
+ .digitization img {
+     border-radius: 10px;
+ }
+
+ .card-1 p,
+ .card-1 h1,
+ .card-2 p,
+ .card-2 h1 {
+     margin: 20px;
+ }
+
+ .card-2 {
+     color: white;
+     background-color: navy;
+     text-align: center;
+     margin: 20px;
+     grid-column: 3/6;
+     border: 2px solid navy;
+     border-radius: 30px;
+
+     grid-area: card2;
+ }
+
+ .grid-container-index {
+     display: grid;
+     grid-template-areas:
+         'nav nav nav nav nav nav'
+         'header header header header header header'
+         'card1 card1 card1 card1 image-1 image-1'
+         'card2 card2 card2 card2 card2 card2'
+         ' references references references references references references'
+         'footer footer footer footer footer footer';
+
+     gap: 20px;
+ }
 
  /* Below are two arbitrary break points. Please adjust to fit your content's needs. You can have more than two breakpoints. You want your site to be usable at ALL viewport widths. */
 
 
 
- /*FIRST BREAK POINT === tablet  Note: This is an arbitrary break point! Change it to fit your needs. */
+
+ /* This media query is only for if the hamburger menu is closed and it  */
+ @media only screen and (min-width : 901px) {
+     .links {
+         display: inline !important
+     }
+ }
+
  @media only screen and (max-width : 900px) {
-     body {
-         background: blue;
+
+     .links {
+         display: none;
+     }
+
+     .icon {
+         display: flex;
+         float: right;
+     }
+
+
+
+     .grid-container-index {
+         display: grid;
+         grid-template-areas:
+             'nav nav nav nav nav nav'
+             'header header header header header header'
+             'card1 card1 card1 card1 card1 card1'
+             'image-1 image-1 image-1 image-1 image-1 image-1'
+             'card2 card2 card2 card2 card2 card2'
+             ' references references references references references references'
+             'footer footer footer footer footer footer';
+
+         gap: 20px;
      }
 
      .grid-container {
          display: grid;
          grid-template-areas:
              'nav nav nav nav nav nav'
-             'name-type name-type name-type name-type name-type name-type'
+             'header header header header header header'
              'pros pros pros pros pros pros'
              'cons cons cons cons cons cons'
              ' references references references references references references'
              'footer footer footer footer footer footer';
-         grid-gap: .5em;
          padding: .5em;
      }
 
@@ -104,25 +217,25 @@
          display: inline-block;
      }
 
+     .references ul {
+         padding-left: 0px;
+     }
+
  }
 
  /*SECOND BREAK POINT === mobile  Note: This is an arbitrary break point! Change it to fit your needs. */
  @media only screen and (max-width : 600px) {
 
-     body {
-         background: fuchsia;
-     }
 
      .grid-container {
          display: grid;
          grid-template-areas:
              'nav nav nav nav nav nav'
-             'name-type name-type name-type name-type name-type name-type'
+             'header header header header header header'
              'pros pros pros pros pros pros'
              'cons cons cons cons cons cons'
              ' references references references references references references'
              'footer footer footer footer footer footer';
-         grid-gap: .5em;
          padding: .5em;
      }
 
