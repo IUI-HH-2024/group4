@@ -37,7 +37,7 @@
 
  .introduction {
      grid-area: introduction;
-     background-color: lightgray;
+     background-color: lightgrey;
      margin: 10px;
      border-radius: 10px;
 
