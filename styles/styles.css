@@ -155,9 +155,13 @@
      list-style-type: "-";
  }
 
- .mobile {
-     display: block !important;
+ #mobile-links {
+     display: none;
+     text-align: center;
+ }
 
+ .showing {
+     display: block !important
  }
 
  .card-1 {
@@ -220,8 +224,8 @@
 
  /* This media query is only for if the hamburger menu is closed and it  */
  @media only screen and (min-width : 901px) {
-     .links {
-         display: inline !important
+     #mobile-links {
+         display: none !important
      }
  }
 
