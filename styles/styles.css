@@ -12,9 +12,10 @@
  }
 
  .links {
+     text-align: center;
      display: inline;
      float: left;
-     margin-left: 20px;
+     margin-right: 20px;
 
  }
 
@@ -30,9 +31,19 @@
 
  }
 
+ nav p {
+     margin: 0;
+     text-align: center;
+ }
+
  .header {
      grid-area: header;
      text-align: center;
+ }
+
+ .link {
+     display: flex;
+     flex-direction: column;
  }
 
  .introduction {
