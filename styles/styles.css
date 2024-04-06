@@ -12,18 +12,33 @@
  }
 
  .links {
-     text-align: center;
-     display: inline;
-     float: left;
-     margin-right: 20px;
 
+     text-align: center;
+     display: block;
+     float: left;
+
+
+ }
+
+ .links:hover {
+     background-color: white;
+
+     transition-duration: 0.5s;
+     color: navy;
+ }
+
+ .clicked {
+     background-color: white;
+     color: navy;
  }
 
  .icon {
      display: none;
+
  }
 
  nav a {
+
      text-decoration: none;
      color: white;
      padding: 5px;
@@ -49,7 +64,7 @@
  .introduction {
      grid-area: introduction;
      background-color: lightgrey;
-     margin: 10px;
+     margin: 0.5em;
      border-radius: 10px;
 
  }
@@ -138,6 +153,11 @@
 
  ul li {
      list-style-type: "-";
+ }
+
+ .mobile {
+     display: block !important;
+
  }
 
  .card-1 {
