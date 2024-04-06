@@ -35,11 +35,28 @@
      text-align: center;
  }
 
+ .introduction {
+     grid-area: introduction;
+     background-color: lightgray;
+     margin: 10px;
+     border-radius: 10px;
+
+ }
+
+ .introduction h1 {
+     padding: 0.5em;
+ }
+
+ .introduction p {
+     padding: 0.5em;
+ }
+
  .pros {
      text-align: center;
      grid-area: pros;
-     background-color: orange;
-
+     background-color: navy;
+     color: white;
+     border-radius: 10px;
  }
 
  #links {
@@ -73,7 +90,9 @@
  .cons {
      text-align: center;
      grid-area: cons;
-     background-color: bisque;
+     background-color: navy;
+     color: white;
+     border-radius: 10px;
  }
 
  .cons ul {
@@ -92,6 +111,7 @@
      grid-template-areas:
          'nav nav nav nav nav nav'
          'header header header header header header '
+         'introduction introduction introduction introduction introduction introduction'
          'pros pros pros cons cons cons'
          'pros pros pros cons cons cons'
          'pros pros pros cons cons cons'
@@ -206,6 +226,7 @@
          grid-template-areas:
              'nav nav nav nav nav nav'
              'header header header header header header'
+             'introduction introduction introduction introduction introduction introduction'
              'pros pros pros pros pros pros'
              'cons cons cons cons cons cons'
              ' references references references references references references'
