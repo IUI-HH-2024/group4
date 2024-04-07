@@ -169,8 +169,7 @@
          'references references references references references references'
          'footer footer footer footer footer footer';
 
-
-
+     gap: 20px;
 
      margin: auto;
  }
@@ -371,6 +370,7 @@
              ' references references references references references references'
              'footer footer footer footer footer footer';
          padding: .5em;
+         gap: 20px;
      }
 
      ul li {
