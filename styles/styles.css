@@ -123,6 +123,7 @@
      text-align: center;
      background-color: navy;
      color: #ADD8E6;
+     border-radius: 10px;
  }
 
 
@@ -143,6 +144,7 @@
      grid-area: footer;
      background-color: navy;
      color: #ADD8E6;
+     border-radius: 10px;
 
  }
 
