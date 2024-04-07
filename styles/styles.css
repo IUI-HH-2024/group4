@@ -291,7 +291,8 @@
  .card-3 p,
  .card-3 h1,
  .card-4 p,
- .card-4 h1 .card-5 p,
+ .card-4 h1,
+ .card-5 p,
  .card-5 h1 {
      margin: 20px;
  }
