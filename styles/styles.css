@@ -30,6 +30,7 @@
  .clicked {
      background-color: white;
      color: navy;
+     border-radius: 30px;
  }
 
  .icon {
@@ -90,6 +91,12 @@
      justify-content: flex-end;
  }
 
+ .link:hover {
+     background-color: white;
+     color: navy;
+     transition-duration: 0.5s;
+     border-radius: 30px;
+ }
 
  .pros li,
  .cons li {
@@ -130,6 +137,16 @@
      grid-area: footer;
      background-color: navy;
      color: white;
+
+ }
+
+
+
+ .footer-link {
+     color: white;
+     margin-top: 10px;
+     ;
+     text-decoration: none;
  }
 
  .grid-container {
@@ -288,11 +305,12 @@
          grid-template-areas:
              'nav nav nav nav nav nav'
              'header header header header header header'
+             'introduction introduction introduction introduction introduction introduction'
              'pros pros pros pros pros pros'
              'cons cons cons cons cons cons'
              ' references references references references references references'
              'footer footer footer footer footer footer';
-         padding: .5em;
+
      }
 
      ul li {
