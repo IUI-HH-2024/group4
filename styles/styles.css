@@ -2,6 +2,9 @@
      max-width: 100%;
  }
 
+ body {
+     background-color: #ADD8E6;
+ }
 
  nav {
      grid-area: nav;
@@ -21,14 +24,14 @@
  }
 
  .links:hover {
-     background-color: white;
+     background-color: lightblue;
 
      transition-duration: 0.5s;
      color: navy;
  }
 
  .clicked {
-     background-color: white;
+     background-color: lightblue;
      color: navy;
      border-radius: 30px;
  }
@@ -41,7 +44,7 @@
  nav a {
 
      text-decoration: none;
-     color: white;
+     color: lightblue;
      padding: 5px;
      border-radius: 20px;
 
@@ -55,6 +58,7 @@
  .header {
      grid-area: header;
      text-align: center;
+     color: navy;
  }
 
  .link {
@@ -64,7 +68,8 @@
 
  .introduction {
      grid-area: introduction;
-     background-color: lightgrey;
+     background-color: navy;
+     color: #ADD8E6;
      margin: 0.5em;
      border-radius: 10px;
 
@@ -82,7 +87,7 @@
      text-align: center;
      grid-area: pros;
      background-color: navy;
-     color: white;
+     color: lightblue;
      border-radius: 10px;
  }
 
@@ -92,7 +97,7 @@
  }
 
  .link:hover {
-     background-color: white;
+     background-color: lightblue;
      color: navy;
      transition-duration: 0.5s;
      border-radius: 30px;
@@ -116,7 +121,8 @@
  .references {
      grid-area: references;
      text-align: center;
-     background-color: lightgray;
+     background-color: navy;
+     color: #ADD8E6;
  }
 
 
@@ -124,7 +130,7 @@
      text-align: center;
      grid-area: cons;
      background-color: navy;
-     color: white;
+     color: #ADD8E6;
      border-radius: 10px;
  }
 
@@ -136,20 +142,21 @@
      text-align: center;
      grid-area: footer;
      background-color: navy;
-     color: white;
+     color: #ADD8E6;
 
  }
 
 
 
  .footer-link {
-     color: white;
+     color: #ADD8E6;
      margin-top: 10px;
      ;
      text-decoration: none;
  }
 
  .grid-container {
+     padding: 0.5em;
      display: grid;
      grid-template-areas:
          'nav nav nav nav nav nav'
@@ -168,6 +175,69 @@
      margin: auto;
  }
 
+ .card-3 {
+     background-color: navy;
+     color: #ADD8E6;
+     margin: 20px;
+     border: 2px solid navy;
+     border-radius: 30px;
+
+     grid-area: card3;
+ }
+
+ .image-3 {
+     grid-area: profile3;
+ }
+
+ .card-4 {
+     color: #ADD8E6;
+     background-color: navy;
+     text-align: center;
+     margin: 20px;
+     border: 2px solid navy;
+     border-radius: 30px;
+     grid-area: card4
+ }
+
+ .image-4 {
+     grid-area: profile4;
+ }
+
+ .card-5 {
+     color: #ADD8E6;
+     background-color: navy;
+     margin: 20px;
+     border: 2px solid navy;
+     border-radius: 30px;
+     grid-area: card5;
+ }
+
+ .image-5 {
+     grid-area: profile5
+ }
+
+ .grid-container-about {
+     display: grid;
+     grid-template-areas:
+         'nav nav nav nav nav nav'
+         'header header header header header header'
+         'card1 card1 card1 card1 card1 profile1'
+         'profile2 profile2 profile2 card2 card2 card2'
+         'card3 card3 card3 card3 card3 profile3'
+         'profile4 profile4 profile4 card4 card4 card4'
+         'card5 card5 card5 card5 card5 profile5'
+         'footer footer footer footer footer footer';
+     gap: 20px;
+     padding: 0.5em
+ }
+
+
+ .image-2 {
+     grid-area: profile2;
+
+
+ }
+
  ul li {
      list-style-type: "-";
  }
@@ -183,7 +253,7 @@
 
  .card-1 {
      background-color: navy;
-     color: white;
+     color: #ADD8E6;
      margin: 20px;
      border: 2px solid navy;
      border-radius: 30px;
@@ -193,9 +263,20 @@
 
  .digitization {
 
-     margin: 20px;
+
      grid-area: image-1;
 
+ }
+
+ .image-1 {
+     width: 10em;
+     grid-area: profile1;
+ }
+
+
+ .profile {
+     width: 300px;
+     border-radius: 10px;
  }
 
  .digitization img {
@@ -205,16 +286,20 @@
  .card-1 p,
  .card-1 h1,
  .card-2 p,
- .card-2 h1 {
+ .card-2 h1,
+ .card-3 p,
+ .card-3 h1,
+ .card-4 p,
+ .card-4 h1 .card-5 p,
+ .card-5 h1 {
      margin: 20px;
  }
 
  .card-2 {
-     color: white;
+     color: #ADD8E6;
      background-color: navy;
      text-align: center;
      margin: 20px;
-     grid-column: 3/6;
      border: 2px solid navy;
      border-radius: 30px;
 
@@ -222,16 +307,18 @@
  }
 
  .grid-container-index {
+     padding: 0.5em;
      display: grid;
      grid-template-areas:
          'nav nav nav nav nav nav'
          'header header header header header header'
-         'card1 card1 card1 card1 image-1 image-1'
+         'card1 card1 image1 image1 image-1 image-1'
          'card2 card2 card2 card2 card2 card2'
          ' references references references references references references'
          'footer footer footer footer footer footer';
 
-     gap: 20px;
+     gap: 10px;
+
  }
 
  /* Below are two arbitrary break points. Please adjust to fit your content's needs. You can have more than two breakpoints. You want your site to be usable at ALL viewport widths. */
