@@ -233,8 +233,8 @@
  }
 
  .icon {
-     margin-top: 0.5em;
-     margin-right: 0.5em;
+
+     margin: 0.5em 0.5em 0.5em 0.5em;
      display: none !important;
  }
 
