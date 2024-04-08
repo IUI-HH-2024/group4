@@ -1,3 +1,11 @@
+function addListener() {
+    document.getElementById('icon').addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+        toggleMenu()
+        }
+        
+    })
+}
 function toggleMenu() {
 
    var x = document.getElementsByClassName("links")

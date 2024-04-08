@@ -233,7 +233,7 @@
  }
 
  .icon {
-
+     cursor: pointer;
      margin: 0.5em 0.5em 0.5em 0.5em;
      display: none !important;
  }
