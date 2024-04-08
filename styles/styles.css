@@ -232,6 +232,11 @@
      padding: 0.5em
  }
 
+ .icon {
+     margin-top: 0.5em;
+     margin-right: 0.5em;
+     display: none !important;
+ }
 
  .image-2 {
      grid-area: profile2;
@@ -342,8 +347,9 @@
      }
 
      .icon {
-         display: flex;
+         display: inline !important;
          float: right;
+         color: white;
      }
 
 
