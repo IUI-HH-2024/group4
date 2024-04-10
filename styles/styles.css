@@ -6,12 +6,13 @@
      background-color: #ADD8E6;
  }
 
+ /* NAV STYLING */
  nav {
      grid-area: nav;
      background-color: navy;
      min-height: 5vh;
      width: 100%;
-     position: sticky;
+     border-radius: 10px;
  }
 
  .links {
@@ -19,25 +20,7 @@
      text-align: center;
      display: block;
      float: left;
-
-
- }
-
- .links:hover {
-     background-color: lightblue;
-
      transition-duration: 0.5s;
-     color: navy;
- }
-
- .clicked {
-     background-color: lightblue;
-     color: navy;
-     border-radius: 30px;
- }
-
- .icon {
-     display: none;
 
  }
 
@@ -55,16 +38,49 @@
      text-align: center;
  }
 
- .header {
-     grid-area: header;
+ .links:hover {
+     background-color: lightblue;
 
-     text-align: center;
+     transition-duration: 0.5s;
      color: navy;
+     transform: scale(1.1);
+ }
+
+ .clicked {
+     background-color: lightblue;
+     color: navy;
+     border-radius: 30px;
  }
 
  .link {
      display: flex;
      flex-direction: column;
+ }
+
+ .icon {
+     cursor: pointer;
+     margin: 0.5em 0.5em 0.5em 0.5em;
+     display: none !important;
+ }
+
+ #links {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ .mobile-link:hover {
+
+     transition-duration: 0.5s;
+     border-radius: 30px;
+     transform: scale(1.2);
+ }
+
+ /* BODY STYLING FOR MAIN PAGES */
+ .header {
+     grid-area: header;
+
+     text-align: center;
+     color: navy;
  }
 
  .introduction {
@@ -73,13 +89,7 @@
      color: #ADD8E6;
      margin: 0.5em;
      border-radius: 10px;
- }
 
- .employment-img {
-     margin-top: 20px;
-     border-radius: 10px;
-     float: right;
-     max-width: 25em;
  }
 
  .introduction h1 {
@@ -88,26 +98,6 @@
 
  .introduction p {
      padding: 0.5em;
- }
-
- .pros {
-     text-align: center;
-     grid-area: pros;
-     background-color: navy;
-     color: lightblue;
-     border-radius: 10px;
- }
-
- #links {
-     display: flex;
-     justify-content: flex-end;
- }
-
- .link:hover {
-     background-color: lightblue;
-     color: navy;
-     transition-duration: 0.5s;
-     border-radius: 30px;
  }
 
  .pros li,
@@ -120,21 +110,12 @@
      margin: 1em;
  }
 
-
- .pros ul {
-     padding: 20px;
- }
-
- .references {
-     grid-area: references;
+ .pros {
      text-align: center;
+     grid-area: pros;
      background-color: navy;
-     color: #ADD8E6;
+     color: lightblue;
      border-radius: 10px;
- }
-
- .references li {
-     margin-bottom: 20px;
  }
 
  .cons {
@@ -149,6 +130,64 @@
      padding: 20px;
  }
 
+ .pros ul {
+     padding: 20px;
+ }
+
+ #referenceList {
+     display: none;
+ }
+
+ #showMore {
+     margin-bottom: 20px;
+     width: 100px;
+     height: 30px;
+     border-radius: 30px;
+     border: 3px solid #ADD8E6;
+     background-color: navy;
+     color: #ADD8E6;
+     cursor: pointer;
+     transition-duration: 0.5s;
+ }
+
+ #showMore:hover {
+     background-color: #ADD8E6;
+     color: navy;
+     transition-duration: 0.5s;
+     transform: translateY(-10px);
+
+
+ }
+
+ .employment-img {
+     margin-top: 20px;
+     border-radius: 10px;
+     float: right;
+     max-width: 25em;
+ }
+
+
+
+
+
+
+
+
+ .references {
+     grid-area: references;
+     text-align: center;
+     background-color: navy;
+     color: #ADD8E6;
+     border-radius: 10px;
+ }
+
+ .references li {
+     margin-bottom: 20px;
+ }
+
+
+ /* FOOTER STYLING */
+
  footer {
      text-align: center;
      grid-area: footer;
@@ -158,8 +197,6 @@
 
  }
 
-
-
  .footer-link {
      color: #ADD8E6;
      margin-top: 10px;
@@ -167,6 +204,8 @@
      text-decoration: none;
  }
 
+
+ /* GRID STYLING */
  .grid-container {
      padding: 0.5em;
      display: grid;
@@ -186,6 +225,37 @@
      margin: auto;
  }
 
+ .grid-container-about {
+     display: grid;
+     grid-template-areas:
+         'nav nav nav nav nav nav'
+         'header header header header header header'
+         'card1 card1 card1 card1 card1 profile1'
+         'profile2 profile2 profile2 card2 card2 card2'
+         'card3 card3 card3 card3 card3 profile3'
+         'profile4 profile4 profile4 card4 card4 card4'
+         'card5 card5 card5 card5 card5 profile5'
+         'footer footer footer footer footer footer';
+     gap: 20px;
+     padding: 0.5em
+ }
+
+ .grid-container-index {
+     padding: 0.5em;
+     display: grid;
+     grid-template-areas:
+         'nav nav nav nav nav nav'
+         'header header header header header header'
+         'card1 card1 image1 image1 image-1 image-1'
+         'card2 card2 card2 card2 card2 card2'
+         ' references references references references references references'
+         'footer footer footer footer footer footer';
+
+     gap: 10px;
+
+ }
+
+ /* ABOUT PAGE STYLING */
  .card-3 {
      background-color: navy;
      color: #ADD8E6;
@@ -227,26 +297,9 @@
      grid-area: profile5
  }
 
- .grid-container-about {
-     display: grid;
-     grid-template-areas:
-         'nav nav nav nav nav nav'
-         'header header header header header header'
-         'card1 card1 card1 card1 card1 profile1'
-         'profile2 profile2 profile2 card2 card2 card2'
-         'card3 card3 card3 card3 card3 profile3'
-         'profile4 profile4 profile4 card4 card4 card4'
-         'card5 card5 card5 card5 card5 profile5'
-         'footer footer footer footer footer footer';
-     gap: 20px;
-     padding: 0.5em
- }
 
- .icon {
-     cursor: pointer;
-     margin: 0.5em 0.5em 0.5em 0.5em;
-     display: none !important;
- }
+
+
 
  .image-2 {
      grid-area: profile2;
@@ -323,26 +376,6 @@
      grid-area: card2;
  }
 
- .grid-container-index {
-     padding: 0.5em;
-     display: grid;
-     grid-template-areas:
-         'nav nav nav nav nav nav'
-         'header header header header header header'
-         'card1 card1 image1 image1 image-1 image-1'
-         'card2 card2 card2 card2 card2 card2'
-         ' references references references references references references'
-         'footer footer footer footer footer footer';
-
-     gap: 10px;
-
- }
-
- /* Below are two arbitrary break points. Please adjust to fit your content's needs. You can have more than two breakpoints. You want your site to be usable at ALL viewport widths. */
-
-
-
-
  /* This media query is only for if the hamburger menu is closed and it  */
  @media only screen and (min-width : 901px) {
      #mobile-links {
@@ -360,6 +393,7 @@
          display: inline !important;
          float: right;
          color: white;
+
      }
 
 

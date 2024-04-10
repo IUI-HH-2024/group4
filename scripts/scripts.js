@@ -6,6 +6,18 @@ function addListener() {
         
     })
 }
+
+function showMore() {
+    if (document.getElementById("showMore").innerHTML == "Show Less") {
+        document.getElementById("showMore").innerHTML = "Show More"
+        document.getElementById("referenceList").style.display = "none"
+    }
+    else {
+        document.getElementById("showMore").innerHTML = "Show Less"
+        document.getElementById("referenceList").style.display = "block"
+
+    }
+}
 function toggleMenu() {
 
    var x = document.getElementsByClassName("links")
