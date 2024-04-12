@@ -260,6 +260,7 @@ footer {
         'card3 card3 card3 card3 card3 profile3'
         'profile4 profile4 profile4 card4 card4 card4'
         'card5 card5 card5 card5 card5 profile5'
+        'profile6 profile6 card6 card6 card6 card6'
         'footer footer footer footer footer footer';
     gap: 20px;
     padding: 0.5em
@@ -389,8 +390,26 @@ ul li {
 .card-4 p,
 .card-4 h1,
 .card-5 p,
-.card-5 h1 {
+.card-5 h1,
+.card-6 h1,
+.card-6 p {
     margin: 20px;
+}
+
+
+
+.card-6 {
+    color: #ADD8E6;
+    background-color: navy;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid navy;
+    border-radius: 30px;
+    grid-area: card6;
+}
+
+.image-6 {
+    grid-area: profile6
 }
 
 .card-2 {
