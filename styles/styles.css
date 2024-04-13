@@ -11,7 +11,8 @@ body {
 /* NAV STYLING */
 #icon {
     position: relative;
-    left: 40%
+    left: 40%;
+    font-size: 32px;
 }
 
 nav {
