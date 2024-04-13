@@ -1,6 +1,6 @@
 /* General Styling */
 img {
-    max-width: auto;
+    max-width: 100%;
 }
 
 body {
@@ -113,7 +113,7 @@ nav {
     }
 
     p {
-        padding: 0.5em;
+        padding: 1em;
     }
 }
 
@@ -190,7 +190,6 @@ nav {
     margin: 20px;
     border-radius: 10px;
     float: right;
-    max-width: 25em;
 }
 
 
@@ -446,7 +445,7 @@ ul li {
         display: inline !important;
         float: right;
         color: white;
-
+        font-size: 50px;
     }
 
 
@@ -499,9 +498,7 @@ ul li {
         display: inline-block;
     }
 
-    .references ul {
-        padding-left: 0px;
-    }
+
 
 }
 
@@ -526,5 +523,7 @@ ul li {
         display: inline-block;
     }
 
-
+    .introduction-img {
+        max-width: 90%;
+    }
 }
