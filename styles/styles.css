@@ -9,6 +9,11 @@ body {
 }
 
 /* NAV STYLING */
+#icon {
+    position: relative;
+    left: 110px
+}
+
 nav {
     grid-area: nav;
     background-color: navy;
@@ -76,6 +81,7 @@ nav {
 }
 
 .icon {
+
     cursor: pointer;
     margin: 0.5em 0.5em 0.5em 0.5em;
     display: none !important;
@@ -83,7 +89,7 @@ nav {
 
 #links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .mobile-link:hover {
@@ -100,6 +106,7 @@ nav {
     text-align: center;
     color: navy;
 }
+
 
 .introduction {
     grid-area: introduction;
@@ -550,5 +557,13 @@ ul li {
     .card-5,
     .card-6 {
         margin: 0;
+    }
+
+    .profile {
+        max-width: 90%;
+    }
+
+    body {
+        margin: 0px;
     }
 }
