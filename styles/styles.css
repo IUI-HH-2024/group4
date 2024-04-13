@@ -23,19 +23,20 @@ nav {
     border-radius: 10px;
 
 
-    a {
+}
 
-        text-decoration: none;
-        color: lightblue;
-        padding: 5px;
-        border-radius: 20px;
+nav a {
 
-    }
+    text-decoration: none;
+    color: lightblue;
+    padding: 5px;
+    border-radius: 20px;
 
-    p {
-        margin: 0;
-        text-align: center;
-    }
+}
+
+nav p {
+    margin: 0;
+    text-align: center;
 }
 
 .hidden {
@@ -116,15 +117,16 @@ nav {
     margin: 0.5em;
     border-radius: 10px;
 
-    h1 {
-        padding: 0.5em;
-    }
 
-    p {
-        padding: 1em;
-    }
 }
 
+.introduction h1 {
+    padding: 0.5em;
+}
+
+.introduction p {
+    padding: 1em;
+}
 
 
 .pros,
@@ -139,13 +141,15 @@ nav {
     color: lightblue;
     border-radius: 10px;
 
-    ul {
-        padding: 20px;
-    }
 
-    li {
-        padding-bottom: 10px;
-    }
+}
+
+.pros ul {
+    padding: 20px;
+}
+
+.pros li {
+    padding-bottom: 10px;
 }
 
 .cons {
@@ -155,16 +159,16 @@ nav {
     color: #ADD8E6;
     border-radius: 10px;
 
-    ul {
-        padding: 20px;
-    }
 
-    li {
-        padding-bottom: 10px;
-    }
 }
 
+.cons ul {
+    padding: 20px;
+}
 
+.cons li {
+    padding-bottom: 10px;
+}
 
 
 
@@ -219,11 +223,12 @@ nav {
     color: #ADD8E6;
     border-radius: 10px;
 
-    li {
-        margin-bottom: 20px;
-    }
+
 }
 
+.references li {
+    margin-bottom: 20px;
+}
 
 
 
@@ -243,10 +248,12 @@ footer {
 
     color: #ADD8E6;
 
-    a {
-        color: #ADD8E6;
 
-    }
+}
+
+.footer-link a {
+    color: #ADD8E6;
+
 }
 
 
@@ -381,9 +388,11 @@ ul li {
 
     grid-area: image-1;
 
-    img {
-        border-radius: 10px;
-    }
+
+}
+
+.digitization img {
+    border-radius: 10px;
 }
 
 .image-1 {
