@@ -523,6 +523,21 @@ ul li {
         justify-content: center;
     }
 
+    .card-1 p,
+    .card-1 h1,
+    .card-2 p,
+    .card-2 h1,
+    .card-3 p,
+    .card-3 h1,
+    .card-4 p,
+    .card-4 h1,
+    .card-5 p,
+    .card-5 h1,
+    .card-6 h1,
+    .card-6 p {
+        text-align: left !important;
+    }
+
     ul li {
         display: inline-block;
     }
