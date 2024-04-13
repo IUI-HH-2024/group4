@@ -527,6 +527,10 @@ ul li {
 /*SECOND BREAK POINT - Mobile */
 @media only screen and (max-width : 600px) {
 
+    .pros li,
+    .cons li {
+        text-align: left;
+    }
 
     .grid-container {
         display: grid;
