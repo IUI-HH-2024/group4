@@ -7,6 +7,7 @@ function addListener() {
     })
 }
 
+
 function showMore() {
     if (document.getElementById("showMore").innerHTML == "Show Less") {
         document.getElementById("showMore").innerHTML = "Show More"
