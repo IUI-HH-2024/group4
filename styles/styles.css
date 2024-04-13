@@ -169,6 +169,13 @@ nav {
 
 #referenceList {
     display: none;
+    text-align: center;
+
+
+}
+
+#referenceList p {
+    margin: 20px;
 }
 
 #showMore {
