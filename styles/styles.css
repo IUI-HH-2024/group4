@@ -290,7 +290,7 @@ footer {
     grid-template-areas:
         'nav nav nav nav nav nav'
         'header header header header header header'
-        'card1 card1 image1 image1 image-1 image-1'
+        'card1 card1 card1 card1 image-1 image-1'
         'card2 card2 card2 card2 card2 card2'
         ' references references references references references references'
         'footer footer footer footer footer footer';
@@ -412,6 +412,10 @@ ul li {
 .card-5 h1,
 .card-6 h1,
 .card-6 p {
+    margin: 20px;
+}
+
+.grid-container-about h2 {
     margin: 20px;
 }
 
