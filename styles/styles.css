@@ -222,6 +222,10 @@ nav p {
 
 }
 
+.references a {
+    color: #ADD8e6;
+}
+
 .references li {
     margin-bottom: 20px;
 }
@@ -447,6 +451,7 @@ ul li {
 .image-6 {
     grid-area: profile6
 }
+
 
 .card-2 {
     color: #ADD8E6;
