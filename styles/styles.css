@@ -126,7 +126,7 @@ nav p {
 }
 
 .pros {
-    text-align: center;
+    text-align: left;
     grid-area: pros;
     background-color: navy;
     color: lightblue;
@@ -143,8 +143,13 @@ nav p {
     padding-bottom: 10px;
 }
 
+.pros h1,
+.cons h1 {
+    margin-left: 20px;
+}
+
 .cons {
-    text-align: center;
+    text-align: left;
     grid-area: cons;
     background-color: navy;
     color: #ADD8E6;
