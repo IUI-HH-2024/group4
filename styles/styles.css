@@ -176,7 +176,9 @@ nav p {
 }
 
 #referenceList p {
+
     margin: 20px;
+    overflow-wrap: break-word;
 }
 
 #showMore {
@@ -213,6 +215,7 @@ nav p {
 /* References Styling */
 
 .references {
+
     grid-area: references;
     text-align: center;
     background-color: navy;
@@ -223,6 +226,7 @@ nav p {
 }
 
 .references a {
+
     color: #ADD8e6;
 }
 
@@ -631,5 +635,9 @@ ul li {
 
     body {
         margin: 0px;
+    }
+
+    #referenceList p {
+        width: 90vw;
     }
 }
