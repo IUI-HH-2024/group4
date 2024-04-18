@@ -464,13 +464,13 @@ ul li {
     grid-area: card2;
 }
 
-.image1,
+.image-1,
 .image-2,
 .image-3,
 .image-4,
 .image-5,
 .image-6 {
-    margin-top: 50%;
+    margin-top: 5vh;
 }
 
 /* This media query is only for if the hamburger menu is closed and it resizes to desktop */
