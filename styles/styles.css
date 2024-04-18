@@ -637,7 +637,11 @@ ul li {
         margin: 0px;
     }
 
+
+}
+
+@media only screen and (max-width:400px) {
     #referenceList p {
-        width: 85vw;
+        width: 80vw;
     }
 }
