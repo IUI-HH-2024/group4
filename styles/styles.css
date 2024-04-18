@@ -284,7 +284,7 @@ footer {
         'header header header header header header'
         'card1 card1 card1 card1 card1 profile1'
         'profile2 card2 card2 card2 card2 card2'
-        'card3 card3 card3 card3 card3 profile3'
+        'card3 card3 card3 card3 card3  profile3'
         'profile4 card4 card4 card4 card4 card4'
         'card5 card5 card5 card5 card5 profile5'
         'profile6 card6 card6 card6 card6 card6'
@@ -464,6 +464,15 @@ ul li {
     grid-area: card2;
 }
 
+.image1,
+.image-2,
+.image3,
+.image-4,
+.image-5,
+.image-6 {
+    margin-top: 50%;
+}
+
 /* This media query is only for if the hamburger menu is closed and it resizes to desktop */
 @media only screen and (min-width : 901px) {
     #mobile-links {
@@ -562,6 +571,7 @@ ul li {
     .image-4,
     .image-5,
     .image-6 {
+        margin-top: 0;
         display: flex;
         justify-content: center;
     }
