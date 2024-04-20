@@ -37,7 +37,7 @@ nav p {
 
 .hidden {
     opacity: 0;
-    transform: translate(-5%);
+    transform: translate(-20%);
     transition: all 2s;
 }
 
@@ -99,7 +99,7 @@ nav p {
     grid-area: header;
 
     text-align: center;
-    color: navy;
+    color: #000080;
 }
 
 
