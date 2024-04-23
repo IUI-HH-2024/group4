@@ -493,6 +493,65 @@ ul li {
     }
 }
 
+@media only screen and (max-width:1400px) {
+    .grid-container-index {
+        padding: 0.5em;
+        display: grid;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'card1 card1 card1 image-1 image-1 image-1'
+            'card2 card2 card2 card2 card2 card2'
+            ' references references references references references references'
+            'footer footer footer footer footer footer';
+
+        gap: 10px;
+
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .grid-container-index {
+        padding: 0.5em;
+        display: grid;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'card1 card1 image-1 image-1 image-1 image-1'
+            'card2 card2 card2 card2 card2 card2'
+            ' references references references references references references'
+            'footer footer footer footer footer footer';
+
+        gap: 10px;
+
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .grid-container-index {
+        display: grid;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'card1 card1 card1 card1 card1 card1'
+            'image-1 image-1 image-1 image-1 image-1 image-1'
+            'card2 card2 card2 card2 card2 card2'
+            ' references references references references references references'
+            'footer footer footer footer footer footer';
+
+        gap: 20px;
+        transition-duration: 0.5s;
+    }
+
+    .digitization {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+
 @media only screen and (max-width : 900px) {
 
     .links {
