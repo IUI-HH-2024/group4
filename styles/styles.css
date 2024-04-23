@@ -111,6 +111,9 @@ nav p {
     color: #000080;
 }
 
+.header h1 {
+    font-size: 40px;
+}
 
 .introduction {
     grid-area: introduction;
